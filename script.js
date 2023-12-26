@@ -15,7 +15,7 @@ Body : emailbody ,
 }).then( 
 
 message => {
-if (message === "OK") {
+{
  alert("OTP Sent To Your Email");
 
 otpverify.style.display="grid";
