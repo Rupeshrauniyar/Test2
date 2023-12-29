@@ -21,17 +21,19 @@ if (message === "OK"){
 otpverify.style.display="grid";
 const otp_inp = document.getElementById('otp_inp');
 const otp_btn = document.getElementById('otp-btn');
-
+otp_btn.addEventListener('click', () => {
+if (otp_inp.value == otp_val) {
+window.location.assign("index.html")
+}
 otp_btn.addEventListener('click', () => {
 if (otp_inp.value == otp_val) {
 alert("Email Verified...")
 }
- window.location.assign("index.html")
 else {
 alert("Invalid Otp");
 }
 })
+})
 }
-}
-);
+})
 }
