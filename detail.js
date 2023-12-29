@@ -22,7 +22,7 @@ Email.send({
     Body : messageBody
 }).then(
  alert("Your details Have been submitted successfully."))
- window.location.assign("http://localhost:8080/index.html")  
+ window.location.assign("index.html")  
 }
 
 
